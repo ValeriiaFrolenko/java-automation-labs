@@ -5,7 +5,12 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-.idea/**
+.idea/
+**/.idea/
+build/
+**/build/
+.gradle/
+**/.gradle/
 
 # User-specific stuff
 .idea/**/workspace.xml
@@ -81,15 +86,6 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
-
-### Intellij+all Patch ###
-# Ignore everything but code style settings and run configurations
-# that are supposed to be shared within teams.
-
-.idea/*
-
-!.idea/codeStyles
-!.idea/runConfigurations
 
 ### Java ###
 # Compiled class file

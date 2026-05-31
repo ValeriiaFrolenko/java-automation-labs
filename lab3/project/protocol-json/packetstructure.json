@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "MAGIC_BYTE": "0x13",
+  "LEN_MAGIC": "1",
+  "LEN_SRC": "1",
+  "LEN_PKT_ID": "8",
+  "LEN_W_LEN": "4",
+  "LEN_CRC16": "2"
+}

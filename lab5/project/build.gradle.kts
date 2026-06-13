@@ -26,6 +26,8 @@ tasks.register<Test>("unitTests") {
     useJUnitPlatform {
         includeTags("unit")
     }
+    testClassesDirs = sourceSets["test"].output.classesDirs
+    classpath = sourceSets["test"].runtimeClasspath
     testLogging {
         events("passed", "skipped", "failed")
     }
@@ -35,6 +37,8 @@ tasks.register<Test>("integrationTests") {
     useJUnitPlatform {
         includeTags("integration")
     }
+    testClassesDirs = sourceSets["test"].output.classesDirs
+    classpath = sourceSets["test"].runtimeClasspath
     testLogging {
         events("passed", "skipped", "failed")
     }
